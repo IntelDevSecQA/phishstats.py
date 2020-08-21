@@ -1,6 +1,6 @@
 # phishstats
 
-This python script check phishstats API for domains, keywords, ASN...
+This python script check https://phishstats.info API for domains, keywords, ASN...
 
 It keeps track of findings in a sqlite database and warnds you only ONCE for each new discovery
 
