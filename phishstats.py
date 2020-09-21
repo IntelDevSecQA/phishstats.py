@@ -20,13 +20,13 @@ searches=[]
 keywords=[]
 
 # delay between two API calls
-request_delay=5
+request_delay=1
 
 # timeout for an API call
 request_timeout=120
 
 # print debug messages
-debug=1
+debug=0
 
 # Program logic blow this line
 
@@ -101,6 +101,7 @@ for search in searches:
         jsonResponse = response.json()
     except:
         print("ERROR: Request failed!",search)
+        sys.exit(1)
 
     if debug: print("done.")
     if len(jsonResponse) > 0:
